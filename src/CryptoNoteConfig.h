@@ -89,7 +89,7 @@ const char     CRYPTONOTE_BLOCKCHAIN_INDICES_FILENAME[]      = "blockchainindice
 const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
 } // parameters
 
-const char     CRYPTONOTE_NAME[]                             = "Gallion1";
+const char     CRYPTONOTE_NAME[]                             = "Gallion2";
 const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001ffffffffff7f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101794bc730bfef06ebf27f97980d9a15bbd13ce8dd22d4d42ce91d971feb737dd2";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
