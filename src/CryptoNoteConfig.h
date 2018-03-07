@@ -89,8 +89,8 @@ const char     CRYPTONOTE_BLOCKCHAIN_INDICES_FILENAME[]      = "blockchainindice
 const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
 } // parameters
 
-const char     CRYPTONOTE_NAME[]                             = "Gallion2";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001ffffffffff7f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101794bc730bfef06ebf27f97980d9a15bbd13ce8dd22d4d42ce91d971feb737dd2";
+const char     CRYPTONOTE_NAME[]                             = "Gallion";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001ffffffffff7f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101461a152128ad8881ebf253b5eefa1623d4dd3bd7f963a1468d8af3ce32fb8e58";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
@@ -103,8 +103,8 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by def
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  128;    //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
-const int      P2P_DEFAULT_PORT                              =  30122;
-const int      RPC_DEFAULT_PORT                              =  30120;
+const int      P2P_DEFAULT_PORT                              =  5190;
+const int      RPC_DEFAULT_PORT                              =  1812;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
@@ -122,7 +122,7 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115";
 
 const char* const SEED_NODES[] = { 
-  "gallion.ddns.net:30122"
+  "gallion.ddns.net:5190"
 
 };
 
