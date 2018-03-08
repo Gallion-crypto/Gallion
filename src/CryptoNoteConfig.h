@@ -90,7 +90,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 const char     CRYPTONOTE_NAME[]                             = "Gallion";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001ffffffffff7f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101461a152128ad8881ebf253b5eefa1623d4dd3bd7f963a1468d8af3ce32fb8e58";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001ffffffffff7f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121015cf9e7b15a00a9a8bdda276d5e3c439b75b64cd9022bb39f412e3faef2b91f0e";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
