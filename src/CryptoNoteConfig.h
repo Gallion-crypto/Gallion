@@ -8,7 +8,7 @@ namespace CryptoNote {
 		const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER = 500000000;
 		const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE = 500000000;
 		const size_t   CRYPTONOTE_MAX_TX_SIZE = 1000000000;
-		const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x65ed; // addresses start with "K"
+		const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x65ed; // addresses start with "gmt"
 		const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 10;
 		const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT = 60 * 60 * 2;
 
@@ -28,7 +28,7 @@ namespace CryptoNote {
 		const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
 		const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE = 600;
 		const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT = 11;
-		const uint64_t MINIMUM_FEE = 100000;
+		const uint64_t MINIMUM_FEE = UINT64_C(100000000);
 		const uint64_t DEFAULT_DUST_THRESHOLD = MINIMUM_FEE;
 
 		const uint64_t DIFFICULTY_TARGET = 240; // seconds
@@ -39,7 +39,7 @@ namespace CryptoNote {
 		const size_t   DIFFICULTY_LAG = 15;  // !!!
 		static_assert(2 * DIFFICULTY_CUT <= DIFFICULTY_WINDOW - 2, "Bad DIFFICULTY_WINDOW or DIFFICULTY_CUT");
 
-		const size_t   MAX_BLOCK_SIZE_INITIAL = 20 * 1024;
+		const size_t   MAX_BLOCK_SIZE_INITIAL = 1000000;
 		const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_NUMERATOR = 100 * 1024;
 		const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_DENOMINATOR = 365 * 24 * 60 * 60 / DIFFICULTY_TARGET;
 
@@ -91,7 +91,7 @@ namespace CryptoNote {
 	const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT = 5050;
 	const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT = 5000;
 
-	const size_t   P2P_CONNECTION_MAX_WRITE_BUFFER_SIZE = 16 * 1024 * 1024; // 16 MB
+	const size_t   P2P_CONNECTION_MAX_WRITE_BUFFER_SIZE = 64 * 1024 * 1024; // 64 MB
 	const uint32_t P2P_DEFAULT_CONNECTIONS_COUNT = 8;
 	const size_t   P2P_DEFAULT_WHITELIST_CONNECTIONS_PERCENT = 70;
 	const uint32_t P2P_DEFAULT_HANDSHAKE_INTERVAL = 60;            // seconds
@@ -104,7 +104,8 @@ namespace CryptoNote {
 	const char     P2P_STAT_TRUSTED_PUB_KEY[] = "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115";
 
 	const char* const SEED_NODES[] = {
-		"gallion.ddns.net:6012"
+		"gallion.ddns.net:6012",
+		"gallion.ddns.net:6013"
 	};
 
 	struct CheckpointData {
@@ -113,11 +114,11 @@ namespace CryptoNote {
 	};
 
 	const std::initializer_list<CheckpointData> CHECKPOINTS = {
-		//{ 10000, "84b6345731e2702cdaadc6ce5e5238c4ca5ecf48e3447136b2ed829b8a95f3ad" },
+		{2000,	"915357c2512935fc334d19475c46dbe876c420c18f05bb4cf771fc2b3ca34d6c" }
 	};
+
 } // CryptoNote
 
 #define ALLOW_DEBUG_COMMANDS
-
 
 
