@@ -1870,10 +1870,10 @@ bool Blockchain::pushBlock(const Block& blockData, const std::vector<Transaction
   difficulty_type currentDifficulty = getDifficultyForNextBlock();
   auto target_calculating_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - targetTimeStart).count();
 
-  if (!(currentDifficulty)) {
-    logger(ERROR, BRIGHT_RED) << "!!!!!!!!! difficulty overhead !!!!!!!!!";
-    return false;
-  }
+  //if (!(currentDifficulty)) {
+  //  logger(ERROR, BRIGHT_RED) << "!!!!!!!!! difficulty overhead !!!!!!!!! " ;
+  //  return false;
+  //}
 
 
   auto longhashTimeStart = std::chrono::steady_clock::now();
